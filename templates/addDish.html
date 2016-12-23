@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% include 'parts/header.html' %}
+
+{% block title %}
+	<title>Add Recipe</title>
+{% endblock %}
+
+{% block content %}
+
+    <form action="{{ url_for('addDish', group_id = group_id) }}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <label for="name">Recipe:</label>
+        <input type="text" name="recipe">
+        <label for="name">Photo:</label>
+        <input type="text" name="photo">
+        <label for="name">Price:</label>
+        <input type="text" name="price">
+        <label for="name">Time:</label>
+        <input type="text" name="time">
+        <button type="submit" class="btn btn-default" id="submit" type="submit">Submit</button>
+    </form>
+    <a href="{{ url_for('showGroup', group_id = group_id) }}">Back</a>
+
+{% endblock %}

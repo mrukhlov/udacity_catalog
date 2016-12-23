@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% include 'parts/header.html' %}
+
+{% block title %}
+	<title>{{ dish.name }}</title>
+{% endblock %}
+
+{% block content %}
+
+    <div class="dish-info">
+        <p class="name">{{ dish.name }}</p>
+        <p>Recipe: {{ dish.recipe }}</p>
+        {% if dish.photo %}
+            <p>Photo: {{ dish.photo }}</p>
+        {% endif %}
+        {% if dish.price %}
+            <p>Price: {{ dish.price }}</p>
+        {% endif %}
+        {% if dish.time %}
+            <p>Time: {{ dish.time }}</p>
+        {% endif %}
+    <a href="{{ url_for('showGroup', group_id = group_id) }}">Back</a>
+    </div>
+
+{% endblock %}

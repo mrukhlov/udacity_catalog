@@ -1,0 +1,14 @@
+<div class="header">
+    <div class="header_inner">
+        <div class="header_text">Catalog App</div>
+        <div class="button">
+            <div class="header-button-inner">
+                {% if 'username' in session %}
+                    <a href="/disconnect">Logout</a>
+                {% else %}
+                    <a href="/login">Login</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

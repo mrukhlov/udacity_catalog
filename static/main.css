@@ -1,0 +1,83 @@
+body {
+    background-color: gainsboro;
+}
+
+.container-main {
+    height: 500px;
+    width: 1200px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    border: solid 0.5px grey;
+    display: flex;
+}
+
+/*category block*/
+
+.category {
+    width: 30%;
+    display: block;
+    /*border-right: solid 0.01px gainsboro;*/
+    margin-left: 20px;
+}
+
+.vertical-border {
+    background-color: gainsboro;
+    width: 1px;
+    height: 450px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.category-header {
+    height: calc(15% - 20px);
+    margin-top: 20px;
+    color: #021f40;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.category-main {
+    height: calc(85% - 20px);
+    margin-top: 20px;
+    color: #e34d07;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+/*item block*/
+
+.item {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.item-header {
+    height: calc(15% - 20px);
+    margin-top: 20px;
+    color: #021f40;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.item-main {
+    height: calc(85% - 20px);
+    margin-top: 20px;
+    color: #e34d07;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+/*other*/
+
+.dish-info {
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.dish-info .name {
+    color: #021f40;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}

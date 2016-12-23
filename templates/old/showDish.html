@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	<title>{{ dish.name }}</title>
+{% endblock %}
+
+{% block content %}
+	<div>
+		<h2>Dishes</h2>
+	</div>
+	<ul>
+        <li>{{ dish.name }}</li>
+        <li>{{ dish.recipe }}</li>
+        {% if dish.photo %}
+            <li>{{ dish.photo }}</li>
+        {% endif %}
+        <li>{{ dish.price }}</li>
+        {% if dish.time %}
+            <li>{{ dish.time }}</li>
+        {% endif %}
+	</ul>
+    <a href="{{ url_for('showGroup', group_id = group_id) }}">Back</a>
+{% endblock %}

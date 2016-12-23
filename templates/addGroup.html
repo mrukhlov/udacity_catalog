@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% include 'parts/header.html' %}
+
+{% block title %}
+	<title>Add Recipe Group</title>
+{% endblock %}
+
+{% block content %}
+
+    <form action="/add_group" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <button type="submit" class="btn btn-default" id="submit" type="submit">Submit</button>
+    </form>
+    <a href="/">Back</a>
+
+{% endblock %}

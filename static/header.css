@@ -1,0 +1,41 @@
+.header{
+    height: 4em;
+    background-color: #021f40;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header_inner {
+    height: inherit;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    /*text-align: center;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .button {
+    height: 50%;
+    width: 80px;
+    background-color: #e34d07;
+    display: flex;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+.header .header_text {
+    max-width: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 50px;
+}
+
+.header .button .header-button-inner {
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-content: center;
+}
